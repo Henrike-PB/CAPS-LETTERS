@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: linear-gradient(0deg, rgba(135, 30, 81, 1) 0%, rgba(192, 64, 191, 1) 100%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: backdrop-filter 0.5s ease;
+    backdrop-filter: blur(0);
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    justify-content: center;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 230, 0);
+}
+
+/* Inicio Parallax */
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+section.modulo.parallax {
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.modulo.parallax-1 { 
+    background-image: url(https://github.com/Henrike-PB/foto/blob/main/capbanner.png?raw=true);
+} 
+
+/* Capa */
+.capsletter {
+    width: 100%;
+    height: auto;
+}
+
+/* Animação da Capivara */
+#cap {
+    position: relative;
+    top: 10px;
+    left: 0;
+    transition: left 0.5s ease;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.foto {
+    float: left;
+    border-radius: 2rem;
+    margin: 0 20px 0 0;
+    width: 400px;
+    height: 400px;
+}
+
+.foto2 {
+    float: right;
+    border-radius: 2rem;
+    margin: 0 0 0 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.fotoFinal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 5rem;
+    padding: 50px;
+}
+
+.div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4 {
+    margin-top: 20px;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 5rem;
+    padding: 50px;
+    display: flexbox;
+    text-align: center;
+}
+
+
+/* Div do sobre */
+.backDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    margin-top: 20px;
+    width: 80%;
+    background-color: aliceblue;
+    border-radius: 5rem;
+    padding: 50px;
+}
+
+.sobre p {
+    font-size: 75%;
+    line-height: 40px;
+    float: left;
+}
+
+.sobre h3 {
+    padding-bottom: 10px;
+}
+
+/* Foto do sobre */
+.capi{
+    border-radius: 45px;
+    float: right; 
+}
+
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 75px;
+    word-spacing: 0.9rem;
+    color: rgb(255, 187, 0);
+    padding: 20px 0 50px 0;
+    font-family: 'Public Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Título dos videos */
+.videosh2 {
+    text-align: center;
+}
+
+/* Div dos vídeos */
+.iframediv {
+    display: inline-block;
+    justify-content: space-around;
+}
+
+footer {
+    box-shadow: 1px 1px 50px 100px rgba(0, 0, 0, 0.363);
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+/* Config. dos vídeos */
+iframe {
+    float: none;
+    border-radius: 2rem;
+    margin: 0 20px 0 0;
+    display: flexbox;
+}
+
+
+/* Parágrafo do subtítulo */
+.pl {
+    padding-top: 20px;
+
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 2.3rem;
+}
+
+/* Parágrafo ao lado da imagem */
+.p1 {
+    padding-top: 50px;
+    clear: left;
+}
+
+p {
+    line-height: 50px;
+    word-spacing: 0.2em;
+}
+
+/* Foto final */
+.linguagens {
+    display: flex;
+    justify-content: center;
+}
+
+.balao {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    transform: translateY(10px);
+}
+
+.direitosReservados{
+    font-size: 0.9rem; 
+    color: antiquewhite;
+}
+
+
+/* Para a responsividade */
+@media only screen and (max-width: 767px) {
+    section.modulo.parallax-1 {
+        background-image: url(https://github.com/Henrike-PB/foto/blob/main/Agenda%20da%20semana%20com%20cultos%20e%20atividades%20azul%20religioso%20story%20do%20instagram.png?raw=true);
+    }
+
+    h1 {
+        font-size: 37.5px;
+    }
+
+    .div2 {
+        width: 100%;
+    }
+
+    p {
+        font-size: 80%;
+        line-height: 35px;
+        word-spacing: 0.3rem;
+    }
+    .p2 {
+        padding-top: 30px;
+    }
+
+    .subtitulo {
+        font-size: 1.60rem;
+        transform: translateY(45px);
+    }
+
+    .videosh2 {
+        font-size: 1.60rem;
+
+    }
+
+    .foto {
+        width: 100%;
+        height: 50%;
+        float: none;
+    }
+
+    .foto2 {
+        width: 90%;
+        height: 50%;
+        float: none;
+        transform: translateY(-1.15rem);
+    }
+
+
+    .div4{
+        width: 100%;
+    }
+
+    .sobre {
+        width: 100%;
+    }
+
+    .sobre p {
+        font-size: 70%;
+        line-height: 30px;
+        word-spacing: 0.2rem;
+
+    }
+
+    .capi {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 70%;
+        height: 30%;
+        float: none;
+        margin-left: 50%;
+        transform: translate(-50%, 10%);
+        
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .balao {
+        transform: translateY(10px);
+        width: 170px;
+        height: 100px;
+    }
+
+    #cap {
+        width: 100px;
+        height: 100px;
+    }
+
+    .direitosReservados {
+        font-size: 0.60rem;
+        text-align: center;
+    }
+}
